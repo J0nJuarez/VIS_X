@@ -1,17 +1,15 @@
-function drawVisu(data) {
-  // Limpiar el contenedor de la visualización
-  document.body.innerHTML = '';
+function drawViz(data) {
+    document.body.innerHTML = '';
+    
+    const vizContainer = document.createElement('div');
+    vizContainer.className = 'viz-container';
 
-  // Crear un nuevo elemento div
-  const viz = document.createElement('div');
-  viz.innerHTML = 'Hola, Looker Studio!';
-  viz.style.fontFamily = 'Arial, sans-serif';
-  viz.style.backgroundColor = '#f2f2f2';
-  viz.style.padding = '10px';
+    const textElement = document.createElement('p');
+    textElement.textContent = 'Hola, Looker Studio!';
+    textElement.className = 'main-text';
 
-  // Añadir el elemento div al cuerpo del documento
-  document.body.appendChild(viz);
+    vizContainer.appendChild(textElement);
+    document.body.appendChild(vizContainer);
 }
 
-// Suscribirse a los datos de Looker Studio
-dscc.subscribeToData(drawVisu, {transform: dscc.objectTransform});
+dscc.subscribeToData(drawViz, {transform: dscc.objectTransform});

@@ -2,9 +2,26 @@
     "name": "Prueba",
     "organization": "Prueba",
     "description": "Descripción breve de lo que hace mi visualización",
-    "logoUrl": "X-logo.png",
+    "logoUrl": "https://ruta/a/tu/logo.png",
+    "organizationUrl": "https://www.linkedin.com/in/jonjuarez000/",
     "supportUrl": "https://www.linkedin.com/in/jonjuarez000/",
-    "privacyPolicyUrl": "Privacidad.md",
+    "privacyPolicyUrl": "https://ruta/a/tu/política/de/privacidad",
+    "termsOfServiceUrl": "https://ruta/a/tus/términos/de/servicio",
     "packageUrl": "https://j0njuarez.github.io/VIS_X/Visu.js",
-    "devMode": true
-}
+    "devMode": true,
+    "components": [
+      {
+        "id": "customViz",
+        "name": "Visualización Personalizada",
+        "description": "Una visualización personalizada simple para Looker Studio",
+        "iconUrl": "https://ruta/a/tu/icono.png",
+        "infoUrl": "https://www.linkedin.com/in/jonjuarez000/",
+        "resource": {
+          "js": "https://j0njuarez.github.io/VIS_X/Visu.js",
+          "config": "https://j0njuarez.github.io/VIS_X/viz-config.json",
+          "css": "https://j0njuarez.github.io/VIS_X/viz.css"
+        }
+      }
+    ]
+  }
+  
