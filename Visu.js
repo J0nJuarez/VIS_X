@@ -1,6 +1,3 @@
-// Importa la biblioteca helper de Looker Studio
-import * as dscc from '@google/dscc';
-
 function drawVisu(data) {
   // Limpiar el contenedor de la visualización
   document.body.innerHTML = '';
